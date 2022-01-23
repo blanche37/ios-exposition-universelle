@@ -22,7 +22,7 @@ class ItemListViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowItemDetailSegue",
            let destination = segue.destination as? DetailViewController,
-           let cell  = sender as? ItemListCell,
+           let cell = sender as? ItemListCell,
            let indexPath = tableView.indexPath(for: cell) {
             let itemData = itemList[indexPath.row]
             destination.getParsedData(with: itemData)

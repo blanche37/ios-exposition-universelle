@@ -1,7 +1,6 @@
 import UIKit
 
 struct Parser {
-    
     var expoData: Exposition? {
         guard let dataAsset = NSDataAsset(name: "exposition_universelle_1900") else {
             return nil

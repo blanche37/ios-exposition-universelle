@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     //MARK: - IBOutlets
     @IBOutlet private weak var expoTitle: UILabel!

@@ -1,6 +1,7 @@
 import UIKit
 
 struct Parser {
+    
     var expoData: Exposition? {
         guard let dataAsset = NSDataAsset(name: "exposition_universelle_1900") else {
             return nil
@@ -14,10 +15,7 @@ struct Parser {
             print(error.localizedDescription)
         }
         
-        guard let validExpoData = expo else {
-            return nil
-        }
-        return validExpoData
+        return expo
     }
     
     var items: [KoreanItem] {

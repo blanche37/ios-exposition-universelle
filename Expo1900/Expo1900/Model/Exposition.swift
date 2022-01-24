@@ -14,7 +14,7 @@ struct Exposition: Codable {
         guard let formatted = formatter.string(for: visitors) else {
             return ""
         }
+        
         return formatted
     }
 }
-

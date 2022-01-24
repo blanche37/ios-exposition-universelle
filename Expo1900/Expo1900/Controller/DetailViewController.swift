@@ -16,6 +16,7 @@ class DetailViewController: UIViewController {
         guard let validItem = item else {
             return
         }
+        
         navigationItem.title = validItem.itemName
         itemImage.image = UIImage(named: validItem.imageName)
         itemDescription.text = validItem.description

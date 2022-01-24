@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
         guard let validExpoData = expoData else {
             return
         }
+        
         configureMainScreen(validExpoData)
     }
     

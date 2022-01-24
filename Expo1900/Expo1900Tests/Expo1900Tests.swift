@@ -19,5 +19,13 @@ class Expo1900Tests: XCTestCase {
         XCTAssertNotNil(testcase)
     }
     
-    
+    func test_formattedVisitorsMethodIsSuccess() {
+        //given
+        let sut = Exposition(title: "", visitors: 9999999999, location: "", duration: "", description: "")
+        let expectedResult = "9,999,999,999"
+        //when
+        let testcase = sut.formattedVisitors
+        //then
+        XCTAssertEqual(testcase, expectedResult)
+    }
 }

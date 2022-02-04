@@ -11,8 +11,6 @@ class ItemListViewController: UIViewController {
     //MARK: - LifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
         self.navigationItem.title = koreanEntry
         let backBarButtonItem = UIBarButtonItem(title: koreanEntry, style: .plain, target: self, action: nil)
         self.navigationItem.backBarButtonItem = backBarButtonItem
